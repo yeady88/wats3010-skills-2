@@ -7,7 +7,8 @@ Viewport tag
 Variables in CSS
 Media Queries
 Tabular Data
-Responsive layout using Flex box and Grid
+Flex box layout
+Grid layout
 Google Fonts
 CSS: target pseudo selector to create the hamburger navigation component
 Masonry layout using CSS column
