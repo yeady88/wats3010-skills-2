@@ -14,11 +14,12 @@ There are tools to help with choosing high contrast color pairs.  For example th
 ### Use Variables  
 In this assignment, you'll use CSS variables to create custom color pairs for a set of 5 containers.  You'll assign one pair to the odd numbered container and the other pair to the even number of containers.  CSS will help you identify odd and even containers.  
 
-1. You'll find an index.html file with an unordered list of numbers 1-5
+1. You'll find an index.html file with an unordered list of numbers 1-5.  Add a style sheet to the index.html.
 2. Layout the containers horizontally and provide dimension and style.
   - Set the body height to `100vh`.  `vh` is the **view height** unit and 100 vh indicates 100% of the visible screen.
   - Set the unordered list to 80% wide and 10 rem high.  Center its contents horizontally by providing `{margin: 5rem auto}`.  This gives a top and bottom margin or 5rem's and equal margins on both and left right of the block element.
   - For the list items, 
+    - set `list-style-type` to none to remove bullets
     - center them horizontally with `text-align` and center them vertically by using 10 rem's for both `height` and `line-height`.
     - apply font properties: size `24px`, family `Arial, Helvetica, sans-serif` and weight `400`
     - display `inline-block` to render the items horizontally
