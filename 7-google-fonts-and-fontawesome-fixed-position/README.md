@@ -63,5 +63,6 @@ p:nth-child(odd) {
 ### Test
 Scroll down the page.  The home should stay fixed near the bottom right.  Click on it to take you "home" to the top of the page.
 
-https://medium.com/samsung-internet-dev/common-responsive-layouts-with-css-grid-and-some-without-245a862f48df
+### Solution
 
+![Google Fonts/Fontawesome/Fixed position](images/google-fonts-fa-fixed-position.png)
