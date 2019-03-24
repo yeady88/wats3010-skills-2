@@ -11,7 +11,8 @@ h1 {
 }
 section {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns:repeat(auto-fill, minmax(400px, 1fr));
   grid-template-rows: repeat(3, 1fr);
   grid-gap: 10px;
   background-color: #fff;
@@ -24,5 +25,5 @@ p {
   padding: 20px;
   font-size: 1.5rem;
   line-height: 1.5;
-  background-color:lightblue;
+  background-color:#dfd29c;
 }
