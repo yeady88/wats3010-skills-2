@@ -6,7 +6,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Flexbox</title>
-  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .flex-nowrap {
+      display: flex;
+    }
+
+    .flex-wrap {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .flex-center {
+      display: flex;
+      justify-content: center;
+    }
+
+    .flex-center-2D {
+      height: 200px;
+      width: 600px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      /*horizontal*/
+      align-content: center;
+      /*vertical*/
+    }
+
+    p {
+      height: 100px;
+      width: 400px;
+      background-color: blue;
+      margin: 5px 5px;
+    }
+
+    ul.copyright {
+      padding: 0 10px;
+      display: flex;
+      list-style-type: none;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+    }
+    footer {
+      background-color: darkgray;
+      color: white;
+      height: 100px;
+    }
+   
+  </style>
 </head>
 
 <body>
@@ -14,7 +62,7 @@
   <section>
     <h2>Flex without Wrap</h2>
     <h3>Paragraph width shrinks with window</h3>
-    <div>
+    <div class="flex-nowrap">
       <p></p>
       <p></p>
       <p></p>
@@ -27,7 +75,7 @@
   <section>
     <h2>Flex with Wrap</h2>
     <h3>Paragraph maintain width and wrap</h3>
-    <div>
+    <div class="flex-wrap">
       <p></p>
       <p></p>
       <p></p>

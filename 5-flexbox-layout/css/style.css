@@ -1,0 +1,17 @@
+p {
+  height: 100px;
+  width: 400px;
+  background-color: blue;
+  margin: 5px 5px;
+}
+
+ul.copyright {
+  padding: 0 10px;
+  list-style-type: none;
+}
+
+footer {
+  background-color: darkgray;
+  color: white;
+  height: 100px;
+}
