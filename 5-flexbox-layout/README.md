@@ -1,7 +1,7 @@
 # Flexbox Layout
 
 In the early days of web development, we used tables (literally the `<table>` tag) to provide layout.  This was both semantically incorrect and came with many challenges as that was not what they were designed for.
-While the use of Float and Positioning were big improvements there were challenges with those layout implementations.  For historical reference, see this article from List Apart [In Search of the Holy Grail](https://alistapart.com/article/holygrail).  
+While the use of Float and Positioning were big improvements there were challenges with those layout implementations.    
 
 Flexbox was 7 years in the making and the spec was released in 2015.  It wasn't really fully implemented in most popular browsers until 2017. As Responsive design became more important after the release of the iPhone in 2007, web developers were looking for not only a good layout, but a layout that could be responsive.  
 
