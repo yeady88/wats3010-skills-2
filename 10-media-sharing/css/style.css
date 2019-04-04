@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -9,30 +8,41 @@ html,
 body {
   height: 100vh;
 }
+
 body {
   /* background:lightblue url("../media/milky-way-2695569_640.jpg") no-repeat fixed center; */
   background-image: url("../media/hubble-heic1509a.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover; 
+  background-size: cover;
 }
 
 section {
- 
   width: 100%;
 }
-.hosted-video, .embedded-video {
-  background-color: rgb(255,255,255,.5);
-  height: 260px;
-  width: 450px;
-  padding: 10px;
-  margin: 10px auto;
+
+.embedded-video, .hosted-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
 }
-.hosted-audio{
-  color: white;
-  background-color: rgb(255,255,255,.5);
-  height: auto;
-  width: 450px;
-  padding: 10px;
-  margin: 10px auto;
+
+.embedded-video iframe,
+.embedded-video object,
+.embedded-video embed,
+.hosted-video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+}
+
+audio {
+  display: block;
+  /* width: 80%; */
+  margin: 0 auto;
 }
