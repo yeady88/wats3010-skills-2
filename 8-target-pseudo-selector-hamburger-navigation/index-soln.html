@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Nav</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+    .brand a {
+      color: black;
+      text-decoration: none;
+    }
+
+    /* grid */
+    .container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 5px;
+    }
+
+    /* items */
+    .container>* {
+      color: #353535;
+      line-height: 1.5;
+      background: #eeeeee;
+    }
+
+    .container>nav,
+    section,
+    footer {
+      padding: 20px;
+    }
+
+    /* nav styles */
+    .container nav {
+      background-color: black;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: lightgray;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: none;
+    }
+
+    nav .active {
+      background-color: darkgray;
+      height: 50px;
+      line-height: 50px;
+    }
+
+    nav li {
+      text-align: center;
+    }
+
+    nav .active a {
+      color: white;
+    }
+
+    a.toggle {
+      text-decoration: none;
+    }
+
+    /* media query for large screen layout */
+    /* nav items will be rendered horizontally and you won't see the hamburger */
+    @media only screen and (min-width: 600px) {
+
+      /* nav styles */
+      nav ul li {
+        display: inline-block;
+        padding: 0 20px 0 0;
+        width: 100px;
+      }
+
+      /* hide toggle */
+      .toggle {
+        display: none;
+      }
+
+      .header {
+        padding: 0 20px;
+        width: 100%;
+        height: auto;
+      }
+
+    }
+
+    /* media query for small screen */
+    /* hide the nav bar */
+    @media only screen and (max-width: 600px) {
+
+      /* #nav is activated by clicking on hamburger whose href is nav*/
+      #nav {
+        transition: transform .3s ease-in-out;
+        top: 0;
+        bottom: 0;
+        position: fixed;
+        width: 300px;
+        right: -340px;
+      }
+
+      /* the href="nav" on the toggle causes the nav:target selectors to activate */
+      #nav:target {
+        transform: translateX(-340px);
+      }
+
+      /* show the close X on the right */
+      .close {
+        text-align: right;
+        display: block;
+        text-decoration: none;
+        font-size: 3em;
+        position: relative;
+        top: -30px;
+      }
+
+      /*show the hamburger toggle on the left */
+      .open {
+        text-align: left;
+        color: black;
+        font-size: 2em;
+        padding-left: 5px;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <a class="toggle open" href="#nav">&#9776;</a>
+      <h1 class="brand"><a href="#">BRAND</a></h1>
+    </header>
+
+    <nav id="nav">
+      <a class="toggle close" href="#">×</a>
+      <ul>
+        <li class="active">
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <section role="main">
+      <h3>Main</h3>
+
+    </section>
+
+    <footer>
+      <h2>Footer</h2>
+    </footer>
+  </div>
+</body>
+
+</html>
