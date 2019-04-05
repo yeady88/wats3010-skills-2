@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url("../images/beach-foam-iphone-wallpaper-533923.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h1,
+h2 {
+  color: gold;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+main {
+  padding: 10px;
+}
+article {
+  background-color: rgba(255, 255, 255, .7);
+}
+
+
+@media only screen and (min-width: 600px) {
+  article {
+    margin: 5rem 30rem;
+    background-color: rgba(255, 255, 255, .7);
+  }
+
+  article {
+    margin-top: 10px;
+  }
+
+  p {
+    font-size: 1.5rem;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+}

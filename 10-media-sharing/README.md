@@ -68,10 +68,10 @@ You have a partially completed index.html provided.  You will need to add the me
       height: 100vh;
     }
 ```  
-2. Use a background image to fill the screen by applying it to the body element.
+2. Use a background image to fill the screen by applying it to the body element. The location of the background image is relative to your current location.  If you're in a css folder you have to go up one (../) to get to it.
 ```
 body {
-      background-image: url("media/hubble-heic1509a.jpg");
+      background-image: url("../media/hubble-heic1509a.jpg");
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-size: cover;
