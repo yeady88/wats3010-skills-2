@@ -55,7 +55,7 @@ You have a partially completed index.html provided.  You will need to add the me
 ```
 #CSS 
 
-1. Reset the browser defaults and set the screen to full height.
+1. Add a CSS file and link to the index.html. Reset the browser defaults and set the screen to full height.
 ```
  * {
       box-sizing: border-box;
