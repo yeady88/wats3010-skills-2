@@ -6,6 +6,9 @@ In the past developers have had to use JavaScript to create a responsive hamburg
 
 Read more about the CSS used in this technique in docs referenced in the Resources section.
 
+## UTF Symbols and HTML Entities
+You'll notice that the hamburger is coded as `&#9776;`.  Values, whether text or numeric, placed with in `&` and `;` are HTML special entities.  They are treated and styled as characters.  If you can use an HTML entity instead of an icon or images, it carries a lot less "baggage" - that is you don't have to download any files to support it.  You can find a list of UTF Symbols such as the hamburger here: https://www.w3schools.com/charsets/ref_utf_symbols.asp.  You can find a list of html entities here: https://dev.w3.org/html5/html-author/charref. There is the possiblity of needing the display a greater than symbol on an HTML page and you can't use `>` because the browser will try to interpret it as part of a tag, so you'd need to use the html entity `&gt;`.
+
 ## Assignment
 You'll find a style sheet attached to the index.html.  It provides some basic styling to the nav bar, but if you view the page, you'll see a **hamburger** and an **X** that don't make sense.  Also the nav will be vertically aligned for all screen sizes.  
 
