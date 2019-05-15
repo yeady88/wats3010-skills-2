@@ -17,14 +17,41 @@ In this assignment, you'll use CSS variables to create custom color pairs for a 
 1. You'll find an index.html file with an unordered list of numbers 1-5.  Add a style sheet to the index.html.
 2. Layout the containers horizontally and provide dimension and style.
   - Set the body height to `100vh`.  `vh` is the **view height** unit and 100 vh indicates 100% of the visible screen.
-  - Set the unordered list to 80% wide and 10 rem high.  Center its contents horizontally by providing `{margin: 5rem auto}`.  This gives a top and bottom margin or 5rem's and equal margins on both and left right of the block element.
+  ```
+  body {
+      height: 100vh;
+    }
+  ```
+  - Set the unordered list to 80% wide and 10 rem high.  Center its contents horizontally by providing `{margin: 5rem auto}`.  This gives a top and bottom margin or 5rem's and equal margins on both and left right of the block element. Set `list-style-type` to none to remove bullets
+  ```
+   ul {
+      width: 80%;
+      height: 10rem;
+       /*center horizontally */
+      margin: 5rem auto;
+      padding: 0;
+      list-style-type:none;    
+    }
+  ```
   - For the list items, 
-    - set `list-style-type` to none to remove bullets
-    - center them horizontally with `text-align` and center them vertically by using 10 rem's for both `height` and `line-height`.
+    - center the text horizontally with `text-align` and center them vertically by using 10 rem's for both `height` and `line-height`.
     - apply font properties: size `24px`, family `Arial, Helvetica, sans-serif` and weight `400`
     - display `inline-block` to render the items horizontally
     - provide a border of `1px`, `solid`, `darkgray`
     - set the width of each item to `19%` (We have 5 items which we want to fill 80% of total horizontal width, but we have a border, so we neeed to leave make the width a little under 20%)
+    ```
+    li {
+      text-align: center;
+      font-size: 24px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 400;
+      display: inline-block;
+      height: 10rem;
+      line-height: 10rem;
+      width: 19%; 
+      border: 1px solid darkgray;
+    }
+    ```
 3. Use a high contrast color selector tool to choose a pair of color for the odd containers. You'll use black and white for the even containers.  Create custom variables for odd and even foreground and background colors that apply to the whole page using the following CSS code which uses the `:root` pseudo selector:
 ```
  :root {
