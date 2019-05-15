@@ -4,6 +4,8 @@ The **viewport** `meta` tag provides information to the browser about scaling th
 
 In this exercise, you try out what is suggested in the [W3 Schools writeup](https://www.w3schools.com/css/css_rwd_viewport.asp) on **viewport**.  The exercise suggests you create 2 files with the same content but one includes a viewport meta tag and one does not.  It asks you to view the page using a phone to see the difference.  
 
+## Exercise
+
 For this exercise, you'll use Chrome Dev tools to simulate a phone sized device (for example you can choose Pixel 2 or iPhone X).  You can see the responsive pages by opening dev tools and clicking on the blue icon showing two screen sizes.  
 ![Chrome dev tools repsonsive icon](images/chrome-dev-tools-responsive-view-icon.png) 
 
@@ -12,5 +14,9 @@ For this exercise, you'll use Chrome Dev tools to simulate a phone sized device 
 1. Then comment out the view port meta tag and take a screenshot of the web page without the viewport tag
 1. Add both your images the **1-viewport-meta-tag-experiment/images directory**
 
+## Taking screen shots
+Mac cmd-shift-4  
+Windows snipping tool   
+Both: [Awesome Screen shot Chrome extension](https://chrome.google.com/webstore/detail/awesome-screenshot-screen/nlipoenfbbikpbjkfpfillcgkoblgpmj)  
 
 
