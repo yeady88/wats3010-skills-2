@@ -16,8 +16,12 @@ In this assignment, you'll use CSS variables to create custom color pairs for a 
 
 1. You'll find an index.html file with an unordered list of numbers 1-5.  Add a style sheet to the index.html.
 2. Layout the containers horizontally and provide dimension and style.
+  - Set box-sizing to border-box
   - Set the body height to `100vh`.  `vh` is the **view height** unit and 100 vh indicates 100% of the visible screen.
   ```
+  *  {
+    box-sizing: border-box;
+  }
   body {
       height: 100vh;
     }
