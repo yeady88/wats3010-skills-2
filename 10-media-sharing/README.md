@@ -1,14 +1,31 @@
 # Sharing Media: Images, Favicon, Video (hosted and embedded), Audio
 
-In this assignment we'll add images, audio and video to a web page.  We've added images using the `img` tag so that won't be covered, but we'll use CSS to add and image in the background and fix it so that it doesn't change as you sroll over the page.  This is sometimes called the "Parallax Effect".  We'll also use an image to create a favicon.  Favicons show up in the browser tab along with the page `title`.  They help the user identify your website. The image for the favicon was created by taking a screen shot of a some text in a word doc and sizing it to 100px x 100px.
+In this assignment we'll add images, audio and video to a web page.  
 
-HTML5 provides `video` and `audio` tags.  If you're hosting your own video you can use the video tag. Not all browsers support all video formats.  The common ones are .mp5, webm and .ogg.  The video tag has nested `src` tags where you can specify multiple files formats depending on what you're hosting.  For this assignment we're only host .mp4 and it works in Safari, FireFox, Chrome and Edge.  
+## Parallax Effect
+We've added images using the `img` tag so that won't be covered, but we'll use CSS to add and image in the background and fix it so that it doesn't change as you sroll over the page.  This is sometimes called the "Parallax Effect".  
+We'll also use an image to create a *favicon*.  
 
-Audio is host with the same set of tags whether you are hosting the audio or referencing audio on the web. When you want to reference video on the web you would use and `iframe` tag. In the case of YouTube you can get this from their sharing link.
+## Favicons
+Favicons show up in the browser tab along with the page `title`.  They help the user identify your website. The image for the favicon was created by taking a screen shot of a some text in a word doc and sizing it to 100px x 100px.
 
+## Sharing Audio and Video
+HTML5 provides `video` and `audio` tags.  If you're hosting your own video you can use the video tag. Not all browsers support all video formats.  The common ones that are supported include .mp5, webm and .ogg.  The video tag has nested `src` tags where you can specify multiple files formats depending on what you're hosting.  For this assignment we're only host .mp4 and it works in Safari, FireFox, Chrome and Edge.
+
+## Embedding Video
+When you share video that is not hosted on your site, it's called embedding and `iframe` tags are use.  If you're sharing a YouTube.com video, you can use their share link to get the embedded tags.  
+
+## Embedding and Hosting Audio
+Audio is hosted with the same set of tags whether you are hosting the audio or referencing audio on the web. 
+
+## More on Responsive Images
+Though not covered in this assignment, the `img` tag has a couple of attributes that can be setup to deliver different sized images for different screen sizes. [Read about](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images) `srcset` and `sizes` attributes to see how this works. This is really helpful for responsive web pages because you don't need CSS and a media query to change the image displayed on different sized devices: it can be done in HTML.  In this tutorial we'll supply a background image in CSS.  
+
+## Options for Audio and Video
 There are many options associated with the `video`, `audio` and `iframe` tags.  For instance you may want to loop you video and there is an attribute for that.  There are some links to sites that use background video.
 
-It can be challenging to serve video responsively.  In this assignment we'll use Flexbox to control our video and iframe elements, as well as the audio elements.
+## Responsive video
+It can be challenging to serve video responsively.  In this assignment we'll use Flexbox to control our video and iframe elements, as well as the audio elements.  Take a look at [this article on responsive video](https://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php), or google for more on this topic.  It's easy to skew video if you try to provide your own height and width values. In fact YouTube provides a ratio that fits there videos and you need to maintain this ratio to not look skewed.
 
 ## Assignment
 You have a partially completed index.html provided.  You will need to add the media tags and then style the project.  There are comments with numbers to help locate which media items goes in which article.  You'll find all the media in the media folder.
@@ -108,6 +125,12 @@ body {
 ```
 article {
   margin: 1rem 0;
+}
+```
+7. Let's make the footer text visible that contains the credits:
+```
+footer a, footer p{
+  color: white;
 }
 ```
 ## Resources

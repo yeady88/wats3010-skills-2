@@ -5,7 +5,7 @@ Column layout produces a page that resembles a newspaper.  Rather than forcing i
 This effect has been called the masonry effect and often solved using JavaScript.  We'll use the CSS `column` property to create the effect. There is a link to a JavaScript library that provides this effect for comparison.
 
 ## Assignment
-Start by adding a css file to the index.html
+Start by adding a css file to the index.html and creating and linking a css file to it.
 
 1. Start by adding the class `"mason"` to the section tag in the HTML.
 2. Center the header.
@@ -49,7 +49,7 @@ Start by adding a css file to the index.html
 ```
  .mason {
       column-count: 3;
-      column-width: 300px;
+      column-width: 200px;
       column-gap: 5px;
     }
 ```
@@ -63,7 +63,7 @@ footer {
 View your work on a large screen and using dev tools, on a mobile screen.  Notice that the browser creates a single column on smaller screens without specifying a rule.
 
 ## Resources  
-[Mozilla Column CSS] (https://developer.mozilla.org/en-US/docs/Web/CSS/columns)
+[Mozilla Column CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/columns)  
 [Masonry](https://masonry.desandro.com/)
 
 ## Solution
