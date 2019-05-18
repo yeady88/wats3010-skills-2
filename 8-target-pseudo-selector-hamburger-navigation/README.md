@@ -1,8 +1,8 @@
 # Pure CSS Hamburger Navigation Using Target Pseudo Selector
 
-CSS3 has given us the ability to add user interaction to web pages without using JavaScript.  In this assignment we'll use the `:target` pseudo selector to make a hamburger link clickable so that we can show vertically aligned navigation on a small screen.  We'll use an internal link to make the close button for the vertical menu interactive and it will just return to rendered state.  We'll use media queries to activate the target at small sized screens and then show a horizontal layout at large screens.
+CSS3 has given us the ability to add user interaction to web pages without using JavaScript.  In this assignment we'll use the `:target` pseudo selector to make a hamburger link clickable so that we can show vertically aligned navigation on a small screen.  We'll use an internal link to make the close button for the vertical menu interactive and it will just return to rendered state.  We'll use media queries to activate the target on small sized screens and then show a horizontal layout at large screens.
 
-In the past developers have had to use JavaScript to create a responsive hamburger nav.  This technique uses some advanced styling with `transition` and `transform`.  Don't worry if this doesn't make sense right away, but just know that these properties allow us to move content in an out of view in an animated way, so that the user follows what's happening.
+In the past developers have had to use JavaScript to create a the responsive hamburger nav.  This technique uses some advanced styling with `transition` and `transform`.  Don't worry if this doesn't make sense right away, but just know that these properties allow us to move content in an out of view in an animated way, so that the user follows what's happening.
 
 Read more about the CSS used in this technique in docs referenced in the Resources section.
 
