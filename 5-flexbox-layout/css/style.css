@@ -8,10 +8,25 @@ p {
 ul.copyright {
   padding: 0 10px;
   list-style-type: none;
+  height: 100%;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;  
 }
 
 footer {
   background-color: darkgray;
   color: white;
   height: 100px;
+}
+.flex-nowrap {
+  display: flex;
+}
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
 }
