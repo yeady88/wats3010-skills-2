@@ -18,13 +18,7 @@ When you choose multiple fonts, the embed instructions will group them together.
 ```
 3. Make the paragraphs containing quotes alternate between your two fonts. This can be done with CSS even/odd
 ```
- p:nth-child(even) {
-  font-family: 'Germania One', cursive;
-}
-
-p:nth-child(odd) {
-  font-family: 'Source Code Pro', monospace;
-}
+  
 ```
 4. Assign the even font choice to h1.
 
